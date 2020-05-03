@@ -1,0 +1,297 @@
+*,
+*:before,
+*:after {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+/*
+Colors
+#F04E32 - Red
+#FFE9A0 - Yellow
+#323232 - Dark grey
+*/
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 23px;
+}
+
+
+/*Header*/
+
+header img {
+    width: 100%;
+    margin: 50px auto 20px;
+}
+
+.buy_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 1px solid #323232;
+    max-width: 85%;
+    margin: 0 auto;
+    border-radius: 5px;
+}
+
+.buynow {
+    background: #323232;
+    color: white;
+    font-size: 17px;
+    font-weight: 700;
+    letter-spacing: 4px;
+    padding: 14px 40px;
+    margin: 20px auto 15px;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+
+.buynow:hover {
+    background: black;
+}
+
+.unforgettable {
+    font-size: 23px;
+    margin: 0 auto 40px;
+    width: 90%;
+    text-align: center;
+}
+
+/*Yellow info containers*/
+
+.yellowbox {
+    background: #FFE9A0;
+    margin: 30px auto;
+/*    border-radius: 5px;*/
+    width: 85%;
+    height: 210px;
+    text-align: center;
+    padding: 15px 20px;
+    border-radius: 5px;
+    font-size: 23px;
+}
+
+.yellowbox img {
+    height: 80px;
+}
+
+.raw_container img {
+    height: 70px;
+    margin-bottom: 10px;
+}
+
+/*Video*/
+
+iframe {
+    max-width: 90%;
+    margin: 0 auto;
+    display: block;
+    padding-bottom: 0;
+     border-radius: 5px;
+}
+
+.video p, .video h2 {
+    color: white;
+}
+
+.video h2 {
+    padding: 20px 20px 5px 20px;
+    font-size: 28px;
+}
+
+.video p {
+    padding: 0px 20px 10px;
+}
+
+.video {
+    background: #F04E32;
+    margin: 0 auto 30px;
+    border-radius: 5px;
+    padding-bottom: 20px;
+}
+
+/*Follow on Instagram*/
+
+.follow {
+    background: #323232;
+    padding-bottom: 40px;
+    margin-bottom: 0;
+}
+
+.follow p {
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    height: 50px;
+    padding: 2px;
+/*    margin-bottom: 20px;*/
+}
+
+.follow img {
+    height: 30px;
+    display: inline;
+    position: relative;
+    top: 15px;
+    margin: 10px;
+}
+
+.follow div img {
+    height: 150px;
+    width: 40%;
+    object-fit: cover;
+
+}
+
+.follow div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+/*Cookies*/
+.cookies {
+    width: 100%;
+    background: #323232;
+    position: fixed;
+    z-index: 100;
+    bottom: 0;
+    border: none;
+    color: white;
+    padding: 2% 4%;
+    font-size: 0.8em;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.cookies a {
+    color: white;
+    font-weight: 700;
+}
+
+.cookies_button {
+    background: white;
+    padding: 10px 25px;
+    font-size: 0.9em;
+    margin: 20px 0;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/*Media query*/
+
+@media (min-width: 700px) {
+
+    main {
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+
+/*    Header - Media*/
+
+    header img {
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 10px 0 0 0;
+        display: block;
+    }
+
+    .buy_container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        margin: 20px auto;
+        padding: 5px;
+        max-width: 750px;
+    }
+
+    .buynow {
+        color: white;
+        font-size: 17px;
+        font-weight: 700;
+        letter-spacing: 4px;
+        padding: 14px 60px;
+        margin: 15px 10px 15px 40px;
+        border-radius: 5px;
+        display: inline-block;
+        }
+
+    .buynow:hover {
+    background: black;
+}
+
+    .unforgettable {
+        width: 300px;
+        text-align: start;
+        font-size: 90%;
+        margin: 10px;
+    }
+
+/*    Yellow info - Media*/
+
+    .yellow_container {
+        display: flex;
+        max-width: 750px;
+        margin: 0 auto;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .yellowbox {
+        font-size: 85%;
+        width: 30%;
+        margin-left: 0;
+        margin-right: 0;
+        padding-bottom: 4vw;
+
+
+    }
+
+    .original_container {
+        margin-left: 2.2vw;
+        margin-right: 2.2vw;
+    }
+
+/*    Video*/
+
+    .video {
+        max-width: 750px;
+        margin: 0 auto 30px;
+        display: flex;
+        padding-bottom: 0;
+    }
+
+    iframe {
+        margin: 20px;
+    }
+
+    video p {
+        padding-bottom: 50px;
+
+    }
+
+    .description {
+        width: 40%;
+        padding-left: 10px;
+    }
+
+    .iframe_container {
+        width: 60%;
+    }
+
+/*    Follow on IG*/
+
+    .follow div img {
+        height: 17vw;
+        width: 17vw;
+        padding-top: 10px;
+    }
+    }

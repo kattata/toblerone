@@ -1,0 +1,92 @@
+*,
+*:before,
+*:after {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+/*
+Colors
+#F04E32 - Red
+#FFE9A0 - Yellow
+#323232 - Dark grey
+*/
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 23px;
+    width: 100%;
+}
+
+.brownies {
+    margin-top: 20px;
+}
+
+.recipe_container {
+    position: relative;
+}
+
+
+.recipe_container img {
+    height: 400px;
+    width: 100%;
+    margin: 10px 0;
+    object-fit: cover;
+    border-radius: 5px;
+    overflow: hidden;
+    transition: transform 2s ease;
+}
+
+.recipe_container img:hover {
+    opacity: 0.7;
+}
+
+.recipe_container h2 {
+    font-size: 25px;
+}
+
+.recipe_container p {
+    font-size: 20px;
+}
+
+.recipe_text {
+    width: 80%;
+    margin: 0 auto;
+    background: white;
+    border-left: 20px solid #F04E32;
+    padding: 15px;
+    border-radius: 5px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-30%);
+}
+
+@media (min-width: 700px) {
+    .recipe_container {
+        width: 50%;
+        margin: 0 auto;
+    }
+
+    .recipe_text {
+        transform: translate(-50%, -10%);
+    }
+
+    .brownies {
+    margin-top: 20px;
+}
+}
+
+
+
+
+
+
+
+
+
+
+

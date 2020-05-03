@@ -1,0 +1,223 @@
+*,
+*:before,
+*:after {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+/*
+Colors
+#F04E32 - Red
+#FFE9A0 - Yellow
+#323232 - Dark grey
+*/
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 23px;
+    width: 100%;
+}
+
+main img {
+    width: 100%;
+}
+
+/*Customize your Toblerone*/
+
+.custom {
+ border: 1px solid black;
+    margin: 20px;
+    border-radius: 5px;
+}
+
+.custom img {
+    width: 100%;
+}
+
+
+.try_button {
+    background: #F04E32;
+    color: white;
+    display: inline-block;
+    align-self: flex-start;
+    padding: 10px 80px;
+    margin: 20px;
+    border-radius: 5px;
+    transition: all .1s ease-in-out;
+}
+
+.try_button:hover {
+    background: white;
+    color: #F04E32;
+    border: 1px solid #F04E32;
+}
+
+.personalize {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+}
+
+/*Milk chocolate*/
+
+
+
+.basket_btn {
+    background: #F04E32;
+    color: white;
+    display: inline-block;
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+    margin: 15px 0 10px;
+    border-radius: 5px;
+        transition: all .1s ease-in-out;
+
+}
+
+.basket_btn:hover {
+    background: white;
+    color: #F04E32;
+    border: 1px solid #F04E32;
+}
+.nutrition_btn {
+    border: 1px solid black;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    border-radius: 5px;
+    display: inline-block;
+        transition: all .1s ease-in-out;
+
+}
+
+.nutrition_btn:hover {
+    background: #323232;
+    color: white;
+/*    border: 1px solid #F04E32;*/
+}
+
+.chocolate_container {
+    margin: 20px;
+}
+
+.small {
+    display: block;
+}
+
+.big {
+    display: none;
+}
+
+.fruity {
+    display: none;
+}
+
+@media (min-width: 700px) {
+
+    .small {
+    display: none;
+
+    }
+
+    .big {
+    display: block;
+    }
+
+    .custom img {
+        width: 70%;
+    }
+
+    .custom {
+/*        padding-bottom: 2vw;*/
+        margin: 3vw auto 0;
+        max-width: 1100px;
+    }
+
+    .personalize {
+        float: right;
+        width: 30vw;
+        margin: -150px 2.5vw 5vw;
+        font-size: 0.9em;
+    }
+
+    .try_button {
+    font-size: 0.9em;
+}
+
+    .chocolate_container {
+        width: 21%;
+        font-size: 1.1vw;
+    }
+
+    .basket_btn, .nutrition_btn {
+        width: 15vw;
+        min-height: 3vw;
+    }
+
+    .buttons {
+        display: flex;
+
+    }
+
+    .nutrition_btn {
+        margin: 15px 0 10px 10px;
+    }
+
+    .milkchocolate {
+        position: absolute;
+        z-index: 10;
+        top: 40vw;
+        left: 62vw;
+    }
+
+    .products img {
+        position: relative;
+        max-width: 1100px;
+        margin: 0 auto;
+    }
+
+
+    .fruit {
+        position: absolute;
+        z-index: 10;
+        right: 20vw;
+        top: 78vw;
+    }
+
+    .fruity {
+        padding-bottom: 50px;
+    }
+
+    .darkchocolate {
+        position: absolute;
+        z-index: 10;
+        top: 85.5vw;
+        left: 13vw;
+    }
+
+    .darkchoc {
+        padding-top: 30px;
+
+    }
+
+    .whitechocolate {
+        position: absolute;
+        z-index: 10;
+        top: 123vw;
+        right: 21vw;
+    }
+}
+
+
+
+
+
+
+
+
